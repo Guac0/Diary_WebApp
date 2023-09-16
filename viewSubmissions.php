@@ -8,10 +8,11 @@
     //include("database.php");
 
     // SQL query to select data from database
-    $sql = " SELECT * FROM diary_entries ORDER BY date DESC ";
+    $sql = " SELECT * FROM diary_entries"; // ORDER BY date DESC 
     //$result = $mysqli->query($sql);
     $result = mysqli_query($conn,$sql);
-    echo $result
+    //echo $result;
+
     /*
     $db=$conn;
     $tableName="diary_entries";
