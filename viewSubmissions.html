@@ -75,10 +75,10 @@ session_start();
                 $dbuser = "admin";
                 $dbpass = "DbPassword123";
                 $dbname = "diary_data_test";
-                $mysqli = new mysqli($dbhost, $dbuser, $dbpass,$dbname);
+                $mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 
                 $sql = "SELECT * FROM diary_entries";
-                $result = mysqli_queryquery($mysqli,$sql);
+                $result = mysqli_query($mysqli,$sql);
 
             ?>
             <table>
@@ -89,7 +89,7 @@ session_start();
                         <th>Productivity</th>
                         <th>Stress</th>
                         <th>Sleep</th>
-                        <th>Weater</th>
+                        <th>Wheater</th>
                         <th>Exercise</th>
                         <th>Good Thing</th>
                         <th>Eating</th>
@@ -101,19 +101,19 @@ session_start();
                     <!-- PHP CODE TO FETCH DATA FROM ROWS https://www.geeksforgeeks.org/how-to-fetch-data-from-localserver-database-and-display-on-html-table-using-php/# -->
                     <?php
                         while ($row = mysqli_fetch_array($query)) {
-                            echo "<tr>";
-                            echo "<td>".$row[date]."</td>";
-                            echo "<td>".$row[how_feeling]."</td>";
-                            echo "<td>".$row[productivity]."</td>";
-                            echo "<td>".$row[stress]."</td>";
-                            echo "<td>".$row[sleep]."</td>";
-                            echo "<td>".$row[weather]."</td>";
-                            echo "<td>".$row[exercise]."</td>";
-                            echo "<td>".$row[good_things]."</td>";
-                            echo "<td>".$row[eating]."</td>";
-                            echo "<td>".$row[make_better]."</td>";
-                            echo "<td>".$row[custom_comments]."</td>";
-                            echo "</tr>";
+                            echo '<tr>'
+                            echo '<td>'.$row[date].'</td>';
+                            echo '<td>'.$row[how_feeling].'</td>';
+                            echo '<td>'.$row[productivity].'</td>';
+                            echo '<td>'.$row[stress].'</td>';
+                            echo '<td>'.$row[sleep].'</td>';
+                            echo '<td>'.$row[weather].'</td>';
+                            echo '<td>'.$row[exercise].'</td>';
+                            echo '<td>'.$row[good_things].'</td>';
+                            echo '<td>'.$row[eating].'</td>';
+                            echo '<td>'.$row[make_better].'</td>';
+                            echo '<td>'.$row[custom_comments].'</td>';
+                            echo '</tr>';
 
                         }
 
@@ -130,6 +130,9 @@ session_start();
                 Enter Date: <input type="text" name="username">
                 <input type="submit">
             </form>
+            <br>
+            <br>
+            <br>
         </main>
         <footer>               
             &copy; Emma Devens - Fall 2023
