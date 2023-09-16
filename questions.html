@@ -16,7 +16,7 @@
             <!--Questions 1 - 3 -->
             <section id = rating_questions_one_thru_ten>
                 <p>1. How are you feeling today, with 10 being amazing, and 1 being the worst: </p>
-                <form>
+                <form form action="viewSubmissions.php" method="post">
                     <input type="radio" id="10" name="feeling_today" value = "10">
                     <label for="10">10</label><br>
                     <input type="radio" id="9" name="feeling_today" value="9">
@@ -40,7 +40,7 @@
                 </form>
                 
                 <p>2. How do you feel like today went, with 10 being the most productive you have been so far, and 1 being you barely/never left your bed: </p>
-                <form>
+                <form form action="viewSubmissions.php" method="post">
                     <input type="radio" id="10" name="feeling_today" value = "10">
                     <label for="10">10</label><br>
                     <input type="radio" id="9" name="feeling_today" value="9">
@@ -64,7 +64,7 @@
                 </form>
 
                 <p>3. How stressful did you feel today, with 10 being not at all, and 1 being very stressed all day long: </p>
-                <form>
+                <form form action="viewSubmissions.php" method="post">
                     <input type="radio" id="10" name="feeling_today" value = "10">
                     <label for="10">10</label><br>
                     <input type="radio" id="9" name="feeling_today" value="9">
@@ -90,7 +90,7 @@
             <!--Questions 4 - idk -->
             <section id =rating_questions_varying>
                 <p>4. About how many hours of sleep did you get last night? </p>
-                <form>
+                <form form action="viewSubmissions.php" method="post">
                     <input type="radio" id="0" name="sleep" value="0">
                     <label for="0">All nighter/ Still haven't slept yet</label><br>
                     <input type="radio" id="1-3" name="sleep" value="1-3">
@@ -103,7 +103,7 @@
                     <label for="10+">10+ hours</label><br>
                 </form>
                 <p>5. What was the weather like today?</p>
-                <form>
+                <form form action="viewSubmissions.php" method="post">
                     <input type="checkbox" id="idk" name="weather" value="idk">
                     <label for="idk">I don't know, I have not been or looked outside today</label><br>
                     <input type="checkbox" id="sunny" name="weather" value="sunny">
@@ -129,21 +129,21 @@
             <!--Questions 6- unknown-->
             <section id = basic_questions>
                 <p>6. How long did you exercise for, and what type did you do?</p>
-                <form>
+                <form form action="viewSubmissions.php" method="post">
                     <input type="text" name="exercise"><br>
                 </form>
                 <p>7. What is one good thing that happened to you today, or one good thing 
                     that you did today
                 </p>
-                <form>
+                <form form action="viewSubmissions.php" method="post">
                     <input type="text" name="good_things"><br>
                 </form>
                 <p>8. How many times did you eat? What did you eat?</p>
-                <form>
+                <form form action="viewSubmissions.php" method="post">
                     <input type="text" name="healthy_eating"><br>
                 </form>
                 <p>9. How could you have made today even better?</p>
-                <form>
+                <form form action="viewSubmissions.php" method="post">
                     <input type="text" name="improvement"><br>
                 </form>
 
@@ -155,19 +155,17 @@
                     a goal you wish to acomplish for tomorrow. Maybe something to help your future self out, or a new 
                     thing you learned today. You can add anything in here, and can review it later.
                 </p>
-                <form>
+                <form form action="viewSubmissions.php" method="post">
                     <input type="text" name="comments"><br>
                 </form>
             </section>
             <section id="Sumbmission">
-                
+
             </section>
         </main>
         <footer>
-            <!--
                 &copy; Emma Devens - Fall 2023
-                &copy; Andrew
-            -->
+                &copy; Andrew Niebur - Fall 2023
         </footer>
     </body>
 </html>
