@@ -15,6 +15,7 @@
                 background-color: rgba(255, 255, 255);
             }
         h1 {text-align: center;}
+        h3 {text-align: center;}
         h5 {text-align: center;}
         /*
         table, td, th{
@@ -34,7 +35,7 @@
     <body>
         <header>
             <h1>Login in</h1>
-            <h5>No sign up required</h5>
+            <!-- <h5>No sign up required</h5> -->
         </header>
         <main>
             <!--Add the Datea to where the button link is-->
@@ -57,12 +58,22 @@
                 <button type = "button">Sign in</button>
                 -->
             </form>
+
+            <h3>Don't have an account?</h3>
+            <h5>Register Now</h5>
+
+            <form action="signup.php" method="post">
+                Username: <input type="text" name="username"><br>
+                Password: <input type="text" name="password"><br>
+                <input type="submit">
+            </form>
+
         </main>
         <footer>
-            <!--
-                &copy; Emma Devens - Fall 2023
-                &copy; Andrew  - Fall 2023
-            -->
+            
+            &copy; Emma Devens - Fall 2023
+            &copy; Andrew Niebur - Fall 2023
+        
         </footer>
     </body>
 </html>
