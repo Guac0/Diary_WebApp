@@ -1,5 +1,6 @@
 <?php
 session_start();
+include("viewSubmissions.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -61,7 +62,80 @@ session_start();
                     <td></td>
                     <td></td>
                 </tr>
-            </table>   
+            </table>
+
+            <br>
+            <br>
+            <br>
+            <table>>
+                <thead>
+                    <tr>
+                    <th>Date</th>
+                    <th>Feel</th>
+                    <th>Productivity</th>
+                    <th>Stress</th>
+                    <th>Sleep</th>
+                    <th>Weater</th>
+                    <th>Exercise</th>
+                    <th>Good Thing</th>
+                    <th>Eating</th>
+                    <th>Do Better</th>
+                    <th>Custom</th>
+                </thead>
+                <tbody>
+                    <!-- PHP CODE TO FETCH DATA FROM ROWS https://www.geeksforgeeks.org/how-to-fetch-data-from-localserver-database-and-display-on-html-table-using-php/# -->
+                    <?php 
+                        // LOOP TILL END OF DATA
+                        echo $result
+                        while($rows=$result->fetch_assoc())
+                        {
+                    ?>
+                        <tr>
+                            <!-- FETCHING DATA FROM EACH
+                                ROW OF EVERY COLUMN -->
+                            <td><?php echo $rows['username'];?></td>
+                            <td><?php echo $rows['problems'];?></td>
+                            <td><?php echo $rows['score'];?></td>
+                            <td><?php echo $rows['articles'];?></td>
+
+                            <td><?php echo $data['date'];?></td>
+                            <td><?php echo $data['how_feeling'];?></td>
+                            <td><?php echo $data['productivity'];?></td>
+                            <td><?php echo $data['stress'];?></td>
+                            <td><?php echo $data['sleep'];?></td>
+                            <td><?php echo $data['weather'];?></td>
+                            <td><?php echo $data['exercise'];?></td>  
+                            <td><?php echo $data['good_things'];?></td>
+                            <td><?php echo $data['eating'];?></td>  
+                            <td><?php echo $data['make_better'];?></td>
+                            <td><?php echo $data['custom_comments'];?></td>  
+                        </tr>
+                    <?php
+                        }
+                    ?>
+                    
+                    <!--
+                    <?php
+                        if(is_array($fetchData)){      
+                        $sn=1;
+                        foreach($fetchData as $data){
+                    ?>
+                    <tr>
+                        <td><?php echo $data['date']??''; ?></td>
+                        <td><?php echo $data['how_feeling']??''; ?></td>
+                        <td><?php echo $data['productivity']??''; ?></td>
+                        <td><?php echo $data['stress']??''; ?></td>
+                        <td><?php echo $data['sleep']??''; ?></td>
+                        <td><?php echo $data['weather']??''; ?></td>
+                        <td><?php echo $data['exercise']??''; ?></td>  
+                        <td><?php echo $data['good_things']??''; ?></td>
+                        <td><?php echo $data['eating']??''; ?></td>  
+                        <td><?php echo $data['make_better']??''; ?></td>
+                        <td><?php echo $data['custom_comments']??''; ?></td>  
+                    </tr>
+                    -->
+                </tbody>
+            </table>
         </main>
         <footer>               
             &copy; Emma Devens - Fall 2023
