@@ -18,6 +18,7 @@ Entries
     c. etc
 9. weather
 10. username and password
+11. reading integration? what are you reading, pages read, thoughts. probably reserve for future update/dropdown
 
 Looking at past entires
 1. local mysql database
