@@ -32,3 +32,39 @@ Webpages
     b. login
         1. submit page
         2. view past submissions
+
+Milestones
+1. Diagrams and Feasibility
+    a. Webpage diagrams
+    b. Webpage flow (login page --> submission)
+    c. Database structure
+    d. General research, establishment of milestones, revision of goals given feasibility
+2. Infrastructure
+    a. MySQL set up and test queries made 
+    b. Test webpage is accessible
+        1. can view from other devices over the network? maybe save for later for security reasons
+3. Basic functionality
+    a. Part 1
+        1. webpage has a basic form and submit button
+        2. submit button results in data being stored in database
+    c. Part 2
+        1. webpage has a basic past entries view page
+        2. webpage can pull data from database and display it
+4. Full functionality
+    a. Login system
+    b. submit page has all fields as described in the design brief
+    c. view submissions - color coded calendar, search and sort past submissions
+5. Beautification
+    a. Website looks nice
+    b. Basic security issues addressed (sql injection, https)
+6. Presentation
+    a. Devpost made
+    b. Presentation practiced
+    c. Present to judges
+
+General Work Breakdown
+    Andrew
+        MySQL and webserver infrastructure
+        Database integration
+    Emma
+        Webpages
