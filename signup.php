@@ -3,7 +3,7 @@
 
     include 'db_connect.php'; // is not included in repo due to login details
     include 'common_funcs.php';
-    
+
     $conn = OpenCon();
     echo "Connected Successfully";
 
@@ -12,6 +12,7 @@
     # if (!mysql_query($user_info, $connect)) { die('Error: ' . mysql_error()); }
     mysqli_query($conn,$user_info);
     echo "Your information was added to the database.";
+    header("Location: decision_page.html");
 
     CloseCon($conn);
 

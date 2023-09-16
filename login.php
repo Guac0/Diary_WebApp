@@ -17,7 +17,8 @@
             //$_SESSION['user_name'] = $row['user_name'];
             //$_SESSION['name'] = $row['name'];
             //$_SESSION['id'] = $row['id'];
-        header("Location: userWebpage.html");
+        header("Location: decision_page.html");
+        echo "Logged in!";
         /*}else{
             header("Location: login.html?error=invalidLogin1");
         }*/
