@@ -1,0 +1,34 @@
+Desired end state:
+Webpage with database integration
+
+Entries
+1. gps location or manual
+2. what youre doing
+3. what youre wearing
+4. who you're with
+5. how you feel (i feel ___ b/c ___?)
+    a. rating 1-10 and color code
+    b. integrate into calendar with color codes?
+    c. stressful rating?
+6. custom comments
+7. time recorded
+8. health
+    a. sleep
+    b. exercise
+    c. etc
+9. weather
+10. username and password
+
+Looking at past entires
+1. local mysql database
+2. see locations on map
+3. view all data of single entry or view data of a specific attribute from multiple recent entries to compare
+4. search and sort by time
+5. calendar with color codes of daily ratings
+
+Webpages
+1. main page 
+    a. about the project
+    b. login
+        1. submit page
+        2. view past submissions
