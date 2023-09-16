@@ -1,5 +1,7 @@
 
 <?php // https://smallbusiness.chron.com/transfer-data-form-database-46976.html
+    
+    session_start();
 
     include 'db_connect.php'; // is not included in repo due to login details
     include 'common_funcs.php';
@@ -14,9 +16,7 @@
         //$row = mysqli_fetch_assoc($result);
         //if ($row['username'] === '$_POST[username]' && $row['password'] === '$_POST[password]') {
         echo "Logged in!";
-            //$_SESSION['user_name'] = $row['user_name'];
-            //$_SESSION['name'] = $row['name'];
-            //$_SESSION['id'] = $row['id'];
+        $_SESSION['username'] = '$_POST[username]';
         header("Location: decision_page.html");
         echo "Logged in!";
         /*}else{

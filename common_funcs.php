@@ -1,15 +1,15 @@
 <?php
+    session_start();
+    function validate($data){
 
-function validate($data){
+        $data = trim($data);
 
-    $data = trim($data);
+        $data = stripslashes($data);
 
-    $data = stripslashes($data);
+        $data = htmlspecialchars($data);
 
-    $data = htmlspecialchars($data);
+        return $data;
 
-    return $data;
-
-}
+    }
 
 ?>

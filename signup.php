@@ -1,6 +1,6 @@
 
 <?php // https://smallbusiness.chron.com/transfer-data-form-database-46976.html
-
+    session_start();
     include 'db_connect.php'; // is not included in repo due to login details
     include 'common_funcs.php';
 
